@@ -13,7 +13,7 @@ export default {
     },
     categoryIcon: {
         type: String, 
-        required:false
+        required:true
     }
 
   }
@@ -23,7 +23,9 @@ export default {
 <template>
         <a :href="link">
             <button>
-                <div class="bg-primary p-2 h-20 w-20 aspect-square rounded-md "></div>
+                <div class="bg-primary p-2 h-20 w-20 aspect-square rounded-md grid place-content-center">
+                  <img :src="categoryIcon" />
+                </div>
                 <span class="text-charcoal font-bold text-xl"> {{ categoryName }} </span>
             </button>
         </a>

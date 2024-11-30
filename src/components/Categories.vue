@@ -6,9 +6,9 @@
 <template>
 
     <section class="bg-white flex-row flex gap-8 shadow-sm px-4 py-2 w-full mt-16 overflow-x-scroll overflow-y-hidden">
-        <Category link="/" categoryName='Burgers' />
-        <Category link="/" categoryName='Fries' />
-        <Category link="/" categoryName='Sides' />
-        <Category link="/" categoryName='Drinks' />
+        <Category link="/" categoryName='Burgers' categoryIcon="Burger.png" />
+        <Category link="/" categoryName='Fries'  categoryIcon="Fries.png"/>
+        <Category link="/" categoryName='Sides'  categoryIcon="Sides.png"/>
+        <Category link="/" categoryName='Drinks' categoryIcon="Drinks.png" />
     </section>
 </template>

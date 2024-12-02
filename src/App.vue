@@ -10,5 +10,9 @@ import Categories from "./components/Categories.vue"
 
   <Categories />
 
-  <RouterView />
+  <section class=" w-full overflow-y-scroll py-4 mt-8">
+    <ul>
+      <RouterView />
+    </ul>
+  </section>
 </template>

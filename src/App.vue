@@ -25,7 +25,7 @@ export default {
 
   <section class=" w-full overflow-y-scroll py-4 mt-8">
     <ul>
-      <RouterView @item-selected="showItem" />
+      <RouterView />
     </ul>
   </section>
 </template>

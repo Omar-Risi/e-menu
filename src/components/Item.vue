@@ -37,14 +37,16 @@ export default {
 
 <template>
   <li class="w-full">
-    <button @click="handleClick" class="text-start bg-white w-full grid grid-cols-[3fr_1fr] py-8 px-4">
+    <button class="text-start bg-white w-full grid gap-8 grid-cols-[3fr_1fr] py-8 px-4">
       <div>
         <h4 class="text-charcoal font-bold text-2xl">{{ itemName }}</h4>
         <p class="text-gray-500 font-semibold">{{ itemDescription }}</p>
         <p class="text-primary font-bold text-2xl">OMR {{ itemPrice }}</p>
       </div>
-      <div class="grid place-content-center">
-        <div class="bg-gray-900 min-w-20 aspect-square"></div>
+      <div class="">
+        <div class="bg-gray-900 w-28 h-28 rounded-md shadow-md aspect-square grid place-content-center p-2">
+          <img :src="imageUrl" />
+        </div>
       </div>
     </button>
   </li>
